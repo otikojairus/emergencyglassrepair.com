@@ -10,7 +10,7 @@ FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-ARG NEXT_PUBLIC_SITE_URL=https://emergencyglassrepair.com
+ARG NEXT_PUBLIC_SITE_URL=https://emergencyglassconnect.com
 ARG NEXT_PUBLIC_PHONE_DISPLAY=1-888-XXX-XXXX
 ARG NEXT_PUBLIC_PHONE_E164=+1888XXXXXXX
 ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL

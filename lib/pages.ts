@@ -93,6 +93,6 @@ export function serviceBaseSlug(slug: string) {
 }
 
 export function absoluteUrl(path = "") {
-  const root = process.env.NEXT_PUBLIC_SITE_URL || "https://emergencyglassrepair.com";
+  const root = process.env.NEXT_PUBLIC_SITE_URL || "https://emergencyglassconnect.com";
   return `${root.replace(/\/$/, "")}/${path.replace(/^\//, "")}`;
 }
