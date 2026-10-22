@@ -1,0 +1,29 @@
+{
+  "name": "emergencyglassrepair-com",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run fetch:images && npm run validate:seo && next build",
+    "start": "next start",
+    "lint": "eslint",
+    "validate:seo": "tsx scripts/validate-seo.ts",
+    "fetch:images": "node scripts/fetch-images.mjs",
+    "generate:images": "node scripts/generate-service-images.mjs",
+    "generate:pages": "python3 scripts/generate-pages.py"
+  },
+  "dependencies": {
+    "next": "^16.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^16.2.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5"
+  }
+}
