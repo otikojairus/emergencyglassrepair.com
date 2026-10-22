@@ -1,0 +1,10 @@
+node_modules
+.next
+.git
+.gitignore
+*.md
+!public/images/ATTRIBUTION.md
+.DS_Store
+.env
+.env.*
+!.env.example

@@ -1,0 +1,14 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://emergencyglassrepair.com}
+        NEXT_PUBLIC_PHONE_DISPLAY: ${NEXT_PUBLIC_PHONE_DISPLAY:-1-888-XXX-XXXX}
+        NEXT_PUBLIC_PHONE_E164: ${NEXT_PUBLIC_PHONE_E164:-+1888XXXXXXX}
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      NODE_ENV: production
+    restart: unless-stopped
