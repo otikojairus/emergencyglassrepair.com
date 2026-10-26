@@ -66,8 +66,8 @@ export const PAGES: SeoPage[] = [
 export const NATIONAL_PAGES = PAGES.filter((p) => p.kind === "national");
 export const CITY_PAGES = PAGES.filter((p) => p.kind === "city");
 
-const PHONE_DISPLAY_DEFAULT = "1-888-XXX-XXXX";
-const PHONE_E164_DEFAULT = "+1888XXXXXXX";
+const PHONE_DISPLAY_DEFAULT = "1-888-496-0133";
+const PHONE_E164_DEFAULT = "+18884960133";
 
 function isPlaceholderPhone(value?: string) {
   return !value || /x{2,}/i.test(value) || value.includes("XXX");

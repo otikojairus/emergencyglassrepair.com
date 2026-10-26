@@ -510,8 +510,8 @@ const NATIONAL_PAGES = PAGES.filter(_c = (p)=>p.kind === "national");
 _c1 = NATIONAL_PAGES;
 const CITY_PAGES = PAGES.filter(_c2 = (p)=>p.kind === "city");
 _c3 = CITY_PAGES;
-const PHONE_DISPLAY_DEFAULT = "1-888-XXX-XXXX";
-const PHONE_E164_DEFAULT = "+1888XXXXXXX";
+const PHONE_DISPLAY_DEFAULT = "1-888-496-0133";
+const PHONE_E164_DEFAULT = "+18884960133";
 function isPlaceholderPhone(value) {
     return !value || /x{2,}/i.test(value) || value.includes("XXX");
 }
