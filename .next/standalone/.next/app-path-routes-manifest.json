@@ -1,10 +1,10 @@
 {
-  "/[slug]/page": "/[slug]",
-  "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
-  "/locations/page": "/locations",
-  "/page": "/",
+  "/_global-error/page": "/_global-error",
   "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/locations/page": "/locations",
   "/services/page": "/services",
-  "/sitemap.xml/route": "/sitemap.xml"
+  "/page": "/",
+  "/[slug]/page": "/[slug]"
 }

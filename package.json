@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run fetch:images && npm run validate:seo && next build",
+    "build": "npm run fetch:images && npm run validate:seo && next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "validate:seo": "tsx scripts/validate-seo.ts",
